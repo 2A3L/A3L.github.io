@@ -1,0 +1,117 @@
+/*===================================================================
+	Parte superior
+*/
+
+.imagen
+{
+	padding-left:10%;
+	padding-right:10%;
+}
+
+#Menu
+{
+	background-color: #ffffff;
+	padding: 5px ;
+}
+
+header, body, section, footer, aside, nav, article{
+display: block; /* Establece el tipo de caja generada por un elemento */ 
+}
+
+
+header, nav /*el menú y la cabezara están centradas*/
+{
+	text-align: center;
+}
+/*Parte superior
+==================================================================
+*/
+
+/*===========================================================
+	Aside y Section
+*/
+
+/*Lo principal*/
+section
+{
+	float: left;/*Centrado a la izquierda*/
+	width: 60%;/*espacio horizontal de un 60% de uso*/
+	padding-top:80px;/*80 pixeles hacia arriba de separación*/
+	padding-bottom:80px;/*80 pixeles hacia abajo de separación*/
+}
+
+/*Listado de otros elementos*/
+aside
+{
+	float: right;/*Centrado a la derecha*/
+	width: 20%;/*Espacion horizontal de un 20% de uso*/
+	padding-top:80px;/*80 pixeles hacia arriba de separación*/
+	padding-bottom:80px;/*80 pixeles hacia abajo de separación*/
+	padding-right:20%;/*Se separa un 20% de la derecha*/
+}
+
+aside li
+{
+	padding-top:15px;/*Se separa 15 pixeles de la zona de arriba*/
+	padding-bottom:15px;/*Se separa 15 pixeles de la zona de abajo*/
+}
+
+
+.central
+{
+	height=10px;/*Ayuda a que se puedan centrar el section y el aside en una misma zona seccion horizontal*/
+}	
+
+footer
+ {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999;
+ }
+ /*Aside y Section
+ ============================================================*/
+ 
+ 
+
+ /*================================================================================
+	Configuraciones del menú nav
+ */
+ 
+nav{
+	/*Bordes redondeados*/
+	-webkit-border-radius:100px;/*Para chrome y Safari*/
+	-moz-border-radius:100px;/*Para Firefox*/
+	-o-border-radius:100px;/*Para Opera*/
+	border-radius:100px;/*El estandar por defecto*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#76674C), to(#B29462));/*Para chrome y Safari*/
+	/*Degradados*/
+	background-image: -moz-linear-gradient(top center, #76674C, #B29462);/*Para Firefox*/
+	background-image: -o-linear-gradient(top, #76674C, #B29462);/*Para Opera*/
+	background-image: linear-gradient(top, #76674C, #B29462);/*El estandar por defecto*/
+	overflow:hidden;
+	padding:10px;
+	width:930px;
+}
+nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:0;
+}
+
+
+nav ul li{
+    float:left;/*Hacia donde estará centrado*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    margin-right:18%;/*Esto se está utilizando para que use todo el espacio del menú/nav */
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 1px 1px 0px #282828;
+}
+
+/*Finalización de la configuración del nav
+==============================================================================
+*/
+
+
